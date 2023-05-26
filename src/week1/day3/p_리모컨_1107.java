@@ -10,54 +10,39 @@ import java.util.stream.Stream;
 
 public class p_리모컨_1107 {
     static int n;
-
-    static int[] nNumber;
-    static int[] comb;
-    static boolean[] visited;
     static int m;
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         n = Integer.parseInt(br.readLine());
         m = Integer.parseInt(br.readLine());
-        HashSet<Integer> data = new HashSet<>();
-        StringTokenizer st=  new StringTokenizer(br.readLine());
-        for (int i = 0; i < m; i++) {
-            data.add(Integer.parseInt(st.nextToken()));
-        }
 
-        int[] newData = new int[10-m];
-        int size = 0;
-        for(int i =0;i<=9;i++){
-            if(!data.contains(i)){
-                newData[size++] = i;
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        boolean[] broken = new boolean[10];
+        for(int i=0;i<m;i++){
+            int n = Integer.parseInt(st.nextToken());
+            broken[n] = true;
+        }
+        int result = Math.abs(n-100); //+,- 로 적용했을때
+        int max = 999999;
+        for(int i =0;i<max;i++){
+            String str = String.valueOf(i);
+            //해당 숫자를 string 전환
+            int len = str.length();
+            //숫자길이체크
+            boolean isBroken = false;
+            for(int j=0;j<len;j++){
+                if(broken[str.charAt(j)-'0']){
+                    isBroken = true;
+                    break;
+                    //만약 부서진 곳이 있으면 탈출
+                }
+            }
+            if(!isBroken){
+                int min = Math.abs(n - i) + len;
+                result = Math.min(min,result);
             }
         }
-
-        System.out.println(Arrays.toString(newData));
-
-        nNumber = Stream.of(String.valueOf(n).split("")).mapToInt(Integer::parseInt).toArray();
-        comb = new int[nNumber.length];
-        visited = new boolean[newData.length];
-
-        perm(newData,comb,visited,0, newData.length, nNumber.length);
-
-    }
-
-
-
-    public static void perm(int[] arr,int[] output, boolean[] visited, int depth, int n, int r){
-        if(depth == r){
-            System.out.println(Arrays.toString(output));
-            return;
-        }
-        for(int i =0;i<n;i++){
-            if(visited[i] != true){
-                visited[i] = true;
-                output[depth] = arr[i];
-                perm(arr,output,visited,depth+1,n,r);
-                visited[i] = false;
-            }
-        }
+        System.out.println(result);
     }
 
 
