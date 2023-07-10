@@ -14,7 +14,7 @@ public class p_20055_컨테이너벨트위로봇 {
         Queue<Integer> queueUp = new LinkedList<>();
         Queue<Integer> queueDown = new LinkedList<>();
         for (int i = 0; i < n; i++) {
-            queueUp
+//            queueUp
         }
         for (int i = 0; i < n; i++) {
         }
