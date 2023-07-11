@@ -16,28 +16,34 @@ public class swea_숫자배열회전 {
         {
             int N = sc.nextInt();
             int[][] arr = new int[N][N];
-            line = new StringBuilder[N];
 
             for(int i =0;i<N;i++)
                 for(int j=0;j<N;j++)
                     arr[i][j] = sc.nextInt();
 
-
-
             int[][] arr90 = changeArr(arr, N);
             int[][] arr180 = changeArr(arr90, N);
             int[][] arr270 = changeArr(arr180, N);
 
+            System.out.println("#" + test_case);
 
+            for(int i = 0; i<N;i++){
+                for(int j =0;j<N;j++){
+                    System.out.print(arr90[i][j]);
+                }
+                System.out.print(" ");
+                for(int j =0;j<N;j++){
+                    System.out.print(arr180[i][j]);
+                }
+                System.out.print(" ");
+                for(int j =0;j<N;j++){
+                    System.out.print(arr270[i][j]);
+                }
+                System.out.println();
+            }
         }
     }
 
-
-    public static void print(int[][] arr){
-        for(int i = 0; i < arr.length ; i++) {
-            System.out.println(Arrays.toString(arr[i]));
-        }
-    }
 
     public static int[][] changeArr(int[][] arr, int N){
         int[][] target = new int[N][N];
