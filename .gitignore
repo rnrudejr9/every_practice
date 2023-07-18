@@ -1,2 +1,5 @@
 alldaypractice.iml
 .idea
+/bin/
+.project
+.classpath
