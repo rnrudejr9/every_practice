@@ -15,6 +15,7 @@ public class P_멋쟁이토마토 {
 	static boolean[][] visited;
 	static int[] dx= {0,1,0,-1};
 	static int[] dy = {1,0,-1,0};
+	static ArrayList<Point> list;
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		String[] split = br.readLine().split(" ");
@@ -22,8 +23,7 @@ public class P_멋쟁이토마토 {
 		m = Integer.parseInt(split[1]);
 		map = new int[m][n];
 		visited = new boolean[m][n];
-		ArrayList<Point> list = new ArrayList<>();
-		System.out.println(m + " " + n);
+		list = new ArrayList<>();
 		for (int i = 0; i < m; i++) {
 			for (int j = 0; j < n; j++) {
 				map[i][j] = 1;
@@ -39,24 +39,31 @@ public class P_멋쟁이토마토 {
 			}
 		}
 
-		for(Point point : list){
-			BFS(point.x,point.y);
-		}
-
+		BFS();
+//		왜 다른게
+	
+		int result = Integer.MIN_VALUE;
 		for (int i = 0; i < m; i++) {
 			for (int j = 0; j < n; j++) {
-				System.out.print(map[i][j] + " ");
+				if(map[i][j] == 0) {
+					System.out.println(-1);
+					return;
+				}else {
+					result = Math.max(result, map[i][j]);
+				}
 			}
-			System.out.println();
 		}
+		
+		System.out.println(result - 1);
 
 	}
-	public static void BFS(int x, int y){
+	public static void BFS(){
 		Queue<Point> queue = new LinkedList<>();
-		queue.add(new Point(x,y));
+		for(Point point : list){
+			queue.add(point);			
+		}
 		while(!queue.isEmpty()){
 			Point point = queue.poll();
-			System.out.println("hello");
 			if(visited[point.x][point.y]){
 				continue;
 			}
@@ -65,8 +72,10 @@ public class P_멋쟁이토마토 {
 				int mx = point.x + dx[i];
 				int my = point.y + dy[i];
 				if(mx >= 0 && mx < m && my >= 0 && my < n && map[mx][my] != -1){
-					map[mx][my] += map[x][y] + 1;
-					queue.add(new Point(mx,my));
+					if(map[mx][my] == 0) {
+						map[mx][my] = map[point.x][point.y] + 1; 
+						queue.add(new Point(mx,my));	
+					}
 				}
 			}
 		}
