@@ -4,12 +4,13 @@ package week5.day6;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.StringTokenizer;
 
 public class P_숨바꼭질_1697 {
-    static int[] arr;
+    static Integer[] arr;
     static int k;
     static int[] dx = {1, -1, 2};
     public static void main(String[] args) throws IOException {
@@ -17,8 +18,9 @@ public class P_숨바꼭질_1697 {
         StringTokenizer st=  new StringTokenizer(br.readLine());
         int n = Integer.parseInt(st.nextToken());
         k = Integer.parseInt(st.nextToken());
-        arr = new int[100_001];
+        arr = new Integer[100_001];
         find(n);
+        System.out.println(arr[k]);
     }
     static class Data{
         public int x;
@@ -31,17 +33,18 @@ public class P_숨바꼭질_1697 {
     }
     public static void find(int x){
         Queue<Data> queue = new LinkedList<>();
-        queue.add(new Data(x,1));
+        queue.add(new Data(x,0));
         while(!queue.isEmpty()){
             Data data = queue.poll();
             int px = data.x;
-            if(arr[px] == k){
-                System.out.println("fin " + data.value);
-            }
-            if(arr[px] != 0){
+            if(arr[px] == null){
+                arr[px] =data.value;
+            }else if(arr[px] > data.value) {
+                arr[px] = data.value;
+            }else if(arr[px] != null){
                 continue;
             }
-            arr[px] = data.value;
+
             int x1 = px + 1;
             int x2 = px - 1;
             int x3 = px * 2;
