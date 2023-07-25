@@ -1,4 +1,5 @@
 # EveryDay - Practice
+### push 후 자동으로 README 수정 기능
 | # | week | day | problem |
 | ------------- | ------------- | ------------- | ------------- |
 | 0  | week1 | day1 | [p_징검다리건너기.java](src/week1/day1/p_징검다리건너기.java)|
