@@ -1,28 +1,45 @@
-from selenium import webdriver
-from time import sleep
-from selenium.webdriver.common.by import By
+import os
 
-try:
-    driver = webdriver.Chrome()
-    url = 'https://edu.ssafy.com/'
-    driver.get(url)
-    sleep(3)
+num_prob = 0
+num_solution = 0
+# for root, dirs, files in os.walk("../src/"):
+#     # file = (root, dirs, files)
+#     if "java" in files:
+#         print(files)
+#     # print(type(files))
+#     if len(root.split("/")) == 3:
+#         # if current directory is month
+#         num_prob += len(dirs)
+#
+#     if len(root.split("/")) == 4:
+#         # if current directory is problem
+#         solutions = list(filter(lambda x: not x.endswith(".md"), files))
+#         num_solution += len(solutions)
+#
+# print(num_prob, num_solution)
 
-    driver.find_element(By.ID,"userId").send_keys(myId);
-    sleep(1)
-    driver.find_element(By.ID,"userPwd").send_keys(pw);
-    sleep(3)
-    driver.find_element(By.CSS_SELECTOR,"#wrap > div > div > div.section > form > div > div.field-set.log-in > div.form-btn > a").click();
-    attribute = driver.find_element(By.CSS_SELECTOR,
-                                    "#wrap > div.container.main-container > div.content > section.main-page.sec1 > div > div.col-md.n1 > div > div.btns > div.state.inRoomEnd > span");
-    get_attribute = attribute.get_attribute('innerHTML')
 
-    print(get_attribute);
-    find = get_attribute.find("정상 출석")
-    print(find);
-    if find == -1:
-        print("출석해야해!");
+items = []
 
-    sleep(5)
-except:
-    print("hello")
+def print_files_in_dir(root_dir, prefix):
+    files = os.listdir(root_dir)
+    for file in files:
+        path = os.path.join(root_dir, file)
+        print(prefix + path)
+        items.append(prefix + path)
+        # if os.path.isdir(path):
+        #     print_files_in_dir(path, prefix + "   ")
+
+def file_write(items):
+    f = open("새로운파일.txt", 'w')
+    print(items)
+    for item in items:
+        f.writelines((str(item)))
+        f.write('\n')
+    f.close()
+
+if __name__ == "__main__":
+    root_dir = "../src/"
+    print_files_in_dir(root_dir,"")
+    file_write(items)
+
