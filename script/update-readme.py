@@ -28,9 +28,9 @@ def print_files_in_dir(root_dir, prefix ,problems):
                 if ext == '.java':
                     print("%s %s" % (root, filename))
                     split_dir = root.split("/")
-                    if len(split_dir) >= 2:
-                        week = str(split_dir[0])
-                        day = str(split_dir[1])
+                    if len(split_dir) >= 4:
+                        week = str(split_dir[2])
+                        day = str(split_dir[3])
                         filename = str(filename)
                         if week and day and filename:
                             problems.append(Problem(str(value),week,day,filename))
