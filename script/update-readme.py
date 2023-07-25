@@ -56,6 +56,7 @@ if __name__ == "__main__":
     problems = []
     personal_dir = "../src/"
     print_files_in_dir(personal_dir, "",problems)
+    sorted(problems, key=lambda x: x.week)
     info = make_info_data(problems)
 
     with open("../README.md", 'w', encoding='utf-8') as f:
