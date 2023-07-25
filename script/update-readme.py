@@ -56,8 +56,8 @@ if __name__ == "__main__":
     problems = []
     personal_dir = "../src/"
     print_files_in_dir(personal_dir, "",problems)
-    sorted(problems, key=attrgetter('week'),reverse=True)
-    for problem in problems:
+    projects = sorted(problems, key=lambda p: p.week,reverse=False)
+    for problem in projects:
         print(problem)
     
     info = make_info_data(problems)
