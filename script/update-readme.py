@@ -52,7 +52,7 @@ def get_table_content_string_problems(problems):
     for problem in problems:
         content += problem.to_read_me_line()
     return content
-    
+
 
 class Problem:
     def __init__(self, problem_number, problem_ref_name, solution_file_name, need_info):
@@ -90,13 +90,13 @@ class Problem:
 
     def get_leet_code_link_title(self):
         return str(self.problem_number) + ". " + self.title
-        
+
     def get_leet_code_link(self):
         return "https://leetcode.com/problems/" + self.problem_ref_name
-        
+
     def get_solution_path(self):
         return solution_file_dir_from_root + self.solution_file_name
-    
+
     def to_read_me_line(self):
         return str(self.problem_number) +\
             " | " + "["+self.title+"]("+self.get_solution_path()+")" +\
@@ -105,7 +105,7 @@ class Problem:
             " | " + self.acRate +\
             "\n"
 
-solution_files = [f for f in listdir(solution_file_dir) if f[0:3]=="P"]
+solution_files = [f for f in listdir(solution_file_dir) if f[0:3]=="Sol"]
 
 # sort solutions
 solutions = list()
@@ -123,26 +123,26 @@ data_file = open(data_file_path, 'r')
 for line in data_file.readlines():
     if not line: break
     split = line.split(',')
-        
+
     problem_num = int(split[0])
 
     # remove if not in solutions
-    # if problem_num not in [solution[0] for solution in solutions]:
-    #     print("not in solutions...")
-    #     continue 
-    
+    if problem_num not in [solution[0] for solution in solutions]:
+        print("not in solutions...")
+        continue 
+
     problem_ref = split[1]
     problem_name = problem_ref.replace('-', '_')
     problem_title = split[2]
     problem_difficulty = split[3]
     problem_acRate = split[4].rstrip()
-    solution_file_name = "P_"+str(problem_num)+"_"+problem_name+".java"
-        
+    solution_file_name = "Sol_"+str(problem_num)+"_"+problem_name+".kt"
+
     problem = Problem(problem_num, problem_ref, solution_file_name, False)
     problem.title = problem_title
     problem.difficulty = problem_difficulty
     problem.acRate = problem_acRate
-        
+
     problems.append(problem)
 data_file.close()
 
@@ -151,12 +151,12 @@ for solution in solutions:
     split = solution[1].split(".")[0].split("_")
     problem_number = split[1]
     problem_ref_name = "-".join(split[2:])
-    
+
     # remove if already in problems
     if int(problem_number) in [int(problem.problem_number) for problem in problems]:
         print("already in problems...")
         continue
-    
+
     problem = Problem(problem_number, problem_ref_name, solution_file, True)
     problems.append(problem)
 
