@@ -3,7 +3,7 @@ from os.path import isfile, join
 import leetcode
 import time
 
-solution_file_dir = "../src/week5/day1"
+solution_file_dir = "../src"
 solution_file_dir_from_root = "src"
 readme_file_path = "../README.md"
 data_file_path = "data-problems"
