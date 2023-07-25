@@ -1,5 +1,5 @@
 import os
-
+from operator import itemgetter, attrgetter
 
 title_project = "# EveryDay - Practice"
 
@@ -56,7 +56,7 @@ if __name__ == "__main__":
     problems = []
     personal_dir = "../src/"
     print_files_in_dir(personal_dir, "",problems)
-    sorted(problems, key=lambda x: x.week)
+    sorted(problems, key=attrgetter('week'),reverse=True)
     for problem in problems:
         print(problem)
     
