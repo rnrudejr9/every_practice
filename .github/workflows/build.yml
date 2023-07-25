@@ -23,7 +23,7 @@ jobs:
           repository after reading Simon Wilson's [hacker new post][1], and he was
           apparently inspired by Josh Branchaud's [TIL collection][2].
         footer: |
-          [1]: https://github.com/rnrudejr9/every_practice/readme
+          [1]: https://github.com/rnrudejr9/every_practice/tree/master/src
           [2]: https://github.com/rnrudejr9/every_practice
         list_most_recent: 2 # optional, lists most recent TILS below description
         date_format: "2020 Jan 15:04" # optional, must align to https://golang.org/pkg/time/#Time.Format
