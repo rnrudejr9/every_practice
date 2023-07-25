@@ -3,8 +3,8 @@ from os.path import isfile, join
 import leetcode
 import time
 
-solution_file_dir = "../src/"
-solution_file_dir_from_root = "src/"
+solution_file_dir = "../src/week5/day1"
+solution_file_dir_from_root = "src/week5/day1"
 readme_file_path = "../README.md"
 data_file_path = "data-problems"
 
@@ -105,7 +105,7 @@ class Problem:
             " | " + self.acRate +\
             "\n"
 
-solution_files = [f for f in listdir(solution_file_dir) if f[0:3]=="Sol"]
+solution_files = [f for f in listdir(solution_file_dir) if f[0:3]=="P"]
 
 # sort solutions
 solutions = list()
@@ -136,7 +136,7 @@ for line in data_file.readlines():
     problem_title = split[2]
     problem_difficulty = split[3]
     problem_acRate = split[4].rstrip()
-    solution_file_name = "Sol_"+str(problem_num)+"_"+problem_name+".kt"
+    solution_file_name = "P_"+str(problem_num)+"_"+problem_name+".java"
         
     problem = Problem(problem_num, problem_ref, solution_file_name, False)
     problem.title = problem_title
