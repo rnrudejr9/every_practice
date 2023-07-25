@@ -14,6 +14,6 @@ _0 TILs and counting..._
 ### Categories
 
 
-[1]: https://github.com/rnrudejr9/every_practice/readme
+[1]: https://github.com/rnrudejr9/every_practice/tree/master/src
 [2]: https://github.com/rnrudejr9/every_practice
 
