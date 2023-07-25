@@ -127,9 +127,9 @@ for line in data_file.readlines():
     problem_num = int(split[0])
 
     # remove if not in solutions
-    if problem_num not in [solution[0] for solution in solutions]:
-        print("not in solutions...")
-        continue 
+    # if problem_num not in [solution[0] for solution in solutions]:
+    #     print("not in solutions...")
+    #     continue 
     
     problem_ref = split[1]
     problem_name = problem_ref.replace('-', '_')
