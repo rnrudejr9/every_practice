@@ -1,19 +1,14 @@
-# TIL
-> Today I Learned
+# leetcode-kotlin
+LeetCode Algorithm Practice
 
-A collection of concrete writeups of small things I learn daily while working
-and researching. My goal is to work in public. I was inspired to start this
-repository after reading Simon Wilson's [hacker new post][1], and he was
-apparently inspired by Josh Branchaud's [TIL collection][2].
+## Problem Solved
+Total |
+------------- |
+0 |
 
+Easy | Medium | Hard
+------------- | ------------- | -------------
+0 | 0 | 0
 
-_0 TILs and counting..._
-
----
-
-### Categories
-
-
-[1]: https://github.com/rnrudejr9/every_practice/tree/master/src
-[2]: https://github.com/rnrudejr9/every_practice
-
+\# | Problem(Solution) | LeetCode Link | Difficulty | Accepted Rate
+------------- | ------------- | ------------- | ------------- | -------------
