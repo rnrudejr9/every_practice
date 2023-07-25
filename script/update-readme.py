@@ -33,7 +33,7 @@ def print_files_in_dir(root_dir, prefix ,problems):
                         day = str(split_dir[1])
                         filename = str(filename)
                         if week and day and filename:
-                            problems.append(Problem(str(value),str(split_dir[6]),str(split_dir[7]),str(filename)))
+                            problems.append(Problem(str(value),week,day,filename))
                             value += 1
     except PermissionError:
         pass
@@ -54,11 +54,11 @@ def make_info_data(problems):
 
 if __name__ == "__main__":
     problems = []
-    personal_dir = "..\\src\\"
+    personal_dir = "../src/"
     print_files_in_dir(personal_dir, "",problems)
     info = make_info_data(problems)
 
-    with open("./README.md", 'w', encoding='utf-8') as f:
+    with open("../README.md", 'w', encoding='utf-8') as f:
         f.write(title_project + "\n")
         f.write(info)
         f.close()
