@@ -4,11 +4,12 @@ from operator import itemgetter, attrgetter
 title_project = "# EveryDay - Practice"
 
 class Problem:
-    def __init__(self,id, week, day, filename):
+    def __init__(self,id, week, day, filename, address):
         self.id =id
         self.week = week
         self.day = day
         self.filename = filename
+        self.address = address
     def get_week(self):
         return self.week
     def get_day(self):
@@ -16,7 +17,7 @@ class Problem:
     def get_filename(self):
         return self.filename
     def __str__(self) -> str:
-        return " | " + self.week + " | " + self.day + " | " + self.filename + " |\n"
+        return " | " + self.week + " | " + self.day + " | [" + self.filename + "](" + self.address + ")"  + "|\n"
 
 
 def print_files_in_dir(root_dir, prefix ,problems):
@@ -33,7 +34,7 @@ def print_files_in_dir(root_dir, prefix ,problems):
                         day = str(split_dir[3])
                         filename = str(filename)
                         if week and day and filename:
-                            problems.append(Problem(str(value),week,day,filename))
+                            problems.append(Problem(str(value),week,day,filename,root))
                             value += 1
     except PermissionError:
         pass
