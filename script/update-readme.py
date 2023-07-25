@@ -1,45 +1,64 @@
 import os
 
-num_prob = 0
-num_solution = 0
-# for root, dirs, files in os.walk("../src/"):
-#     # file = (root, dirs, files)
-#     if "java" in files:
-#         print(files)
-#     # print(type(files))
-#     if len(root.split("/")) == 3:
-#         # if current directory is month
-#         num_prob += len(dirs)
-#
-#     if len(root.split("/")) == 4:
-#         # if current directory is problem
-#         solutions = list(filter(lambda x: not x.endswith(".md"), files))
-#         num_solution += len(solutions)
-#
-# print(num_prob, num_solution)
+
+title_project = "# EveryDay - Practice"
+
+class Problem:
+    def __init__(self,id, week, day, filename):
+        self.id =id
+        self.week = week
+        self.day = day
+        self.filename = filename
+    def get_week(self):
+        return self.week
+    def get_day(self):
+        return self.day
+    def get_filename(self):
+        return self.filename
+    def __str__(self) -> str:
+        return " | " + self.id + " | " + self.week + " | " + self.day + " | " + self.filename + " |\n"
 
 
-items = []
+def print_files_in_dir(root_dir, prefix ,problems):
+    value = 1
+    try:
+        for (root, dirs, files) in os.walk(root_dir):
+            for filename in files:
+                ext = os.path.splitext(filename)[-1]
+                if ext == '.java':
+                    # print("%s %s" % (root, filename))
+                    split_dir = root.split("\\")
+                    if len(split_dir) >= 2:
+                        week = str(split_dir[0])
+                        day = str(split_dir[1])
+                        filename = str(filename)
+                        if week and day and filename:
+                            problems.append(Problem(str(value),str(split_dir[6]),str(split_dir[7]),str(filename)))
+                            value += 1
+    except PermissionError:
+        pass
 
-def print_files_in_dir(root_dir, prefix):
-    files = os.listdir(root_dir)
-    for file in files:
-        path = os.path.join(root_dir, file)
-        print(prefix + path)
-        items.append(prefix + path)
-        # if os.path.isdir(path):
-        #     print_files_in_dir(path, prefix + "   ")
 
-def file_write(items):
-    f = open("새로운파일.txt", 'w')
-    print(items)
-    for item in items:
-        f.writelines((str(item)))
-        f.write('\n')
-    f.close()
+
+
+
+def make_info_data(problems):
+    info = f"| # | week | day | problem |\n| ------------- | ------------- | ------------- | ------------- |\n"
+    for problem in problems:
+        temp = f"{problem}"
+        info += temp
+
+    info += """"""
+    return info
+
 
 if __name__ == "__main__":
-    root_dir = "../src/"
-    print_files_in_dir(root_dir,"")
-    file_write(items)
+    problems = []
+    personal_dir = "..\\src\\"
+    print_files_in_dir(personal_dir, "",problems)
+    info = make_info_data(problems)
 
+    with open("./README.md", 'w', encoding='utf-8') as f:
+        f.write(title_project + "\n")
+        f.write(info)
+        f.close()
