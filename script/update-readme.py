@@ -16,7 +16,7 @@ class Problem:
     def get_filename(self):
         return self.filename
     def __str__(self) -> str:
-        return " | " + self.id + " | " + self.week + " | " + self.day + " | " + self.filename + " |\n"
+        return " | " + self.week + " | " + self.day + " | " + self.filename + " |\n"
 
 
 def print_files_in_dir(root_dir, prefix ,problems):
@@ -44,8 +44,8 @@ def print_files_in_dir(root_dir, prefix ,problems):
 
 def make_info_data(problems):
     info = f"| # | week | day | problem |\n| ------------- | ------------- | ------------- | ------------- |\n"
-    for problem in problems:
-        temp = f"{problem}"
+    for index in range( 0, len(problems)):
+        temp = f"| {index} {problems[index]}"
         info += temp
 
     info += """"""
