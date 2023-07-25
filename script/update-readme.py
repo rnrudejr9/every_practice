@@ -60,7 +60,7 @@ if __name__ == "__main__":
     for problem in projects:
         print(problem)
     
-    info = make_info_data(problems)
+    info = make_info_data(projects)
 
     with open("../README.md", 'w', encoding='utf-8') as f:
         f.write(title_project + "\n")
