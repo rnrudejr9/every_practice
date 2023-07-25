@@ -57,3 +57,5 @@
 | 53  | week6 | day1 | ClassAbstractTest.java |
 | 54  | week6 | day1 | InterfaceTest.java |
 | 55  | week6 | day2 | P_1676_팩토리얼0의개수.java |
+| 56  | week6 | day3 | P_내일테스트.java |
+| 57  | week7 | day1 | P_테스트입니다.java |
