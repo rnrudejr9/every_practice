@@ -3,6 +3,8 @@ from operator import itemgetter, attrgetter
 
 title_project = "# EveryDay - Practice"
 
+sub_project = "### push 후 자동으로 README 수정 기능"
+
 class Problem:
     def __init__(self,id, week, day, filename, address):
         self.id =id
@@ -67,5 +69,6 @@ if __name__ == "__main__":
 
     with open("../README.md", 'w', encoding='utf-8') as f:
         f.write(title_project + "\n")
+        f.write(sub_project + "\n")
         f.write(info)
         f.close()
