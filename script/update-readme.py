@@ -26,8 +26,8 @@ def print_files_in_dir(root_dir, prefix ,problems):
             for filename in files:
                 ext = os.path.splitext(filename)[-1]
                 if ext == '.java':
-                    # print("%s %s" % (root, filename))
-                    split_dir = root.split("\\")
+                    print("%s %s" % (root, filename))
+                    split_dir = root.split("/")
                     if len(split_dir) >= 2:
                         week = str(split_dir[0])
                         day = str(split_dir[1])
