@@ -1,20 +1,18 @@
 # EveryDay - Practice
 | # | week | day | problem |
 | ------------- | ------------- | ------------- | ------------- |
+ | 29 | week1 | day1 | p_징검다리건너기.java |
+ | 30 | week1 | day4 | p_주차요금계산_프로그래머스_solved.java |
+ | 31 | week1 | day3 | p_리모컨_1107.java |
+ | 32 | week1 | day5 | p_세로읽기_solved.java |
+ | 33 | week1 | day5 | p_1976_여행가자.java |
+ | 34 | week1 | day2 | p_광고삽입.java |
+ | 35 | week1 | day2 | p_창영이와퇴근_22116.java |
+ | 36 | week1 | day2 | p_삼각달팽이.java |
  | 1 | week2 | day1 | p_RGB.java |
  | 2 | week2 | day1 | p_최소비용구하기.java |
  | 3 | week2 | day2 | p_11725_트리의부모찾기.java |
  | 4 | week2 | day2 | p_20055_컨테이너벨트위로봇.java |
- | 5 | week6 | day1 | InstanceOfTest.java |
- | 6 | week6 | day1 | SingleTonPatternTest.java |
- | 7 | week6 | day1 | StringRefTest.java |
- | 8 | week6 | day1 | StringIsImmutableTest.java |
- | 9 | week6 | day1 | P_경로찾기_11403.java |
- | 10 | week6 | day1 | MethodOverrodingTest.java |
- | 11 | week6 | day1 | StringBuilderTest.java |
- | 12 | week6 | day1 | ClassAbstractTest.java |
- | 13 | week6 | day1 | InterfaceTest.java |
- | 14 | week6 | day2 | P_1676_팩토리얼0의개수.java |
  | 15 | week3 | toss | Main.java |
  | 16 | week4 | day1 | swea_최빈수오답.java |
  | 17 | week4 | day1 | swea_최빈수.java |
@@ -29,14 +27,6 @@
  | 26 | week4 | day2 | swea_숫자배열회전.java |
  | 27 | week4 | day7 | p_순열.java |
  | 28 | week4 | day7 | p_DFS_예제테스트.java |
- | 29 | week1 | day1 | p_징검다리건너기.java |
- | 30 | week1 | day4 | p_주차요금계산_프로그래머스_solved.java |
- | 31 | week1 | day3 | p_리모컨_1107.java |
- | 32 | week1 | day5 | p_세로읽기_solved.java |
- | 33 | week1 | day5 | p_1976_여행가자.java |
- | 34 | week1 | day2 | p_광고삽입.java |
- | 35 | week1 | day2 | p_창영이와퇴근_22116.java |
- | 36 | week1 | day2 | p_삼각달팽이.java |
  | 37 | week5 | day1 | P_파이프옮기기.java |
  | 38 | week5 | day1 | P_쉬운최단거리.java |
  | 39 | week5 | day4 | P_토마토_7569.java |
@@ -57,3 +47,13 @@
  | 54 | week5 | day2 | p_n과m5.java |
  | 55 | week5 | day7 | P_연구소_답.java |
  | 56 | week5 | day7 | P_연구소_14502.java |
+ | 5 | week6 | day1 | InstanceOfTest.java |
+ | 6 | week6 | day1 | SingleTonPatternTest.java |
+ | 7 | week6 | day1 | StringRefTest.java |
+ | 8 | week6 | day1 | StringIsImmutableTest.java |
+ | 9 | week6 | day1 | P_경로찾기_11403.java |
+ | 10 | week6 | day1 | MethodOverrodingTest.java |
+ | 11 | week6 | day1 | StringBuilderTest.java |
+ | 12 | week6 | day1 | ClassAbstractTest.java |
+ | 13 | week6 | day1 | InterfaceTest.java |
+ | 14 | week6 | day2 | P_1676_팩토리얼0의개수.java |
