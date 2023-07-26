@@ -1,5 +1,15 @@
 # EveryDay - Practice
 ### push 후 자동으로 README 수정 기능
+| # | week | day |
+|---|---|---| 
+| 0 | week2 | 4 | 
+| 1 | week6 | 11 | 
+| 2 | week3 | 1 | 
+| 3 | week7 | 1 | 
+| 4 | week4 | 13 | 
+| 5 | week1 | 8 | 
+| 6 | week5 | 20 | 
+
 ### 총 푼 문제수 = 58 🎉
 
 | # | week | day | problem |
