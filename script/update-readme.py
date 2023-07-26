@@ -5,6 +5,8 @@ title_project = "# EveryDay - Practice"
 
 sub_project = "### push 후 자동으로 README 수정 기능"
 
+dic = {}
+
 class Problem:
     def __init__(self,id, week, day, filename, address):
         self.id =id
@@ -24,6 +26,7 @@ class Problem:
 
 def print_files_in_dir(root_dir, prefix ,problems):
     value = 1
+    global dic
     try:
         for (root, dirs, files) in os.walk(root_dir):
             for filename in files:
@@ -35,6 +38,11 @@ def print_files_in_dir(root_dir, prefix ,problems):
                     address += "/"+filename
                     if len(split_dir) >= 4:
                         week = str(split_dir[2])
+                        dic_key = dic.get(week)
+                        if dic_key is None:
+                            dic[week] = 1
+                        else:
+                            dic[week] = dic.get(week) + 1
                         day = str(split_dir[3])
                         filename = str(filename)
                         if week and day and filename:
@@ -44,7 +52,13 @@ def print_files_in_dir(root_dir, prefix ,problems):
         pass
 
 
-
+def make_info_header(dic):
+    info = f"| # | week | day |\n"
+    info += f"|---|---|---| \n"
+    for index, (key, value) in enumerate(dic.items()):
+        info += f"| {index} | {key} | {value} | \n"
+    print(info)
+    return info
 
 
 def make_info_data(problems):
@@ -67,9 +81,11 @@ if __name__ == "__main__":
         print(problem)
     
     info = make_info_data(projects)
+    header = make_info_header(dic)
 
     with open("../README.md", 'w', encoding='utf-8') as f:
         f.write(title_project + "\n")
         f.write(sub_project + "\n")
+        f.write(header + "\n")
         f.write(info)
         f.close()
