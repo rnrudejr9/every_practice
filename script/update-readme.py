@@ -55,8 +55,8 @@ def print_files_in_dir(root_dir, prefix ,problems):
 def make_info_header(dic):
     info = f"| # | week | day |\n"
     info += f"|---|---|---| \n"
-    for index, (key, value) in enumerate(dic.items()):
-        info += f"| {index} | {key} | {value} | \n"
+    for index in range(0,len(dic)):
+        info += f"| {index+1} | {dic[index][0]} | {dic[index][1]} | \n"
     print(info)
     return info
 
@@ -65,7 +65,7 @@ def make_info_data(problems):
     info = f"### 총 푼 문제수 = {len(problems)} 🎉\n\n"
     info += f"| # | week | day | problem |\n| ------------- | ------------- | ------------- | ------------- |\n"
     for index in range( 0, len(problems)):
-        temp = f"| {index} {problems[index]}"
+        temp = f"| {index+1} {problems[index]}"
         info += temp
 
     info += """"""
@@ -77,11 +77,10 @@ if __name__ == "__main__":
     personal_dir = "../src/"
     print_files_in_dir(personal_dir, "",problems)
     projects = sorted(problems, key=attrgetter('week','day'),reverse=False)
-    for problem in projects:
-        print(problem)
+    sorted_dic = sorted(dic.items(),key= lambda item: item[0],reverse= False)
     
     info = make_info_data(projects)
-    header = make_info_header(dic)
+    header = make_info_header(sorted_dic)
 
     with open("../README.md", 'w', encoding='utf-8') as f:
         f.write(title_project + "\n")
