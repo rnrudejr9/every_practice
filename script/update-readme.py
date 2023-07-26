@@ -48,7 +48,8 @@ def print_files_in_dir(root_dir, prefix ,problems):
 
 
 def make_info_data(problems):
-    info = f"| # | week | day | problem |\n| ------------- | ------------- | ------------- | ------------- |\n"
+    info = f"### 총 푼 문제수 = {len(problems)} 🎉\n\n"
+    info += f"| # | week | day | problem |\n| ------------- | ------------- | ------------- | ------------- |\n"
     for index in range( 0, len(problems)):
         temp = f"| {index} {problems[index]}"
         info += temp
