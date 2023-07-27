@@ -5,6 +5,8 @@ title_project = "# EveryDay - Practice"
 
 sub_project = "### push 후 자동으로 README 수정 기능"
 
+dic = {}
+
 class Problem:
     def __init__(self,id, week, day, filename, address):
         self.id =id
@@ -24,6 +26,7 @@ class Problem:
 
 def print_files_in_dir(root_dir, prefix ,problems):
     value = 1
+    global dic
     try:
         for (root, dirs, files) in os.walk(root_dir):
             for filename in files:
@@ -35,6 +38,11 @@ def print_files_in_dir(root_dir, prefix ,problems):
                     address += "/"+filename
                     if len(split_dir) >= 4:
                         week = str(split_dir[2])
+                        dic_key = dic.get(week)
+                        if dic_key is None:
+                            dic[week] = 1
+                        else:
+                            dic[week] = dic.get(week) + 1
                         day = str(split_dir[3])
                         filename = str(filename)
                         if week and day and filename:
@@ -44,13 +52,20 @@ def print_files_in_dir(root_dir, prefix ,problems):
         pass
 
 
-
+def make_info_header(dic):
+    info = f"| # | week | day |\n"
+    info += f"|---|---|---| \n"
+    for index in range(0,len(dic)):
+        info += f"| {index+1} | {dic[index][0]} | {dic[index][1]} | \n"
+    print(info)
+    return info
 
 
 def make_info_data(problems):
-    info = f"| # | week | day | problem |\n| ------------- | ------------- | ------------- | ------------- |\n"
+    info = f"### 총 푼 문제수 = {len(problems)} 🎉\n\n"
+    info += f"| # | week | day | problem |\n| ------------- | ------------- | ------------- | ------------- |\n"
     for index in range( 0, len(problems)):
-        temp = f"| {index} {problems[index]}"
+        temp = f"| {index+1} {problems[index]}"
         info += temp
 
     info += """"""
@@ -62,13 +77,14 @@ if __name__ == "__main__":
     personal_dir = "../src/"
     print_files_in_dir(personal_dir, "",problems)
     projects = sorted(problems, key=attrgetter('week','day'),reverse=False)
-    for problem in projects:
-        print(problem)
+    sorted_dic = sorted(dic.items(),key= lambda item: item[0],reverse= False)
     
     info = make_info_data(projects)
+    header = make_info_header(sorted_dic)
 
     with open("../README.md", 'w', encoding='utf-8') as f:
         f.write(title_project + "\n")
         f.write(sub_project + "\n")
+        f.write(header + "\n")
         f.write(info)
         f.close()
