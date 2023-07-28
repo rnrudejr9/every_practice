@@ -7,10 +7,10 @@
 | 3 | week3 | 1 | 
 | 4 | week4 | 13 | 
 | 5 | week5 | 20 | 
-| 6 | week6 | 11 | 
+| 6 | week6 | 13 | 
 | 7 | week7 | 1 | 
 
-### 총 푼 문제수 = 58 🎉
+### 총 푼 문제수 = 60 🎉
 
 | # | week | day | problem |
 | ------------- | ------------- | ------------- | ------------- |
@@ -71,4 +71,6 @@
 | 55  | week6 | day1 | [InterfaceTest.java](src/week6/day1/InterfaceTest.java)|
 | 56  | week6 | day2 | [P_1676_팩토리얼0의개수.java](src/week6/day2/P_1676_팩토리얼0의개수.java)|
 | 57  | week6 | day3 | [P_내일테스트.java](src/week6/day3/P_내일테스트.java)|
-| 58  | week7 | day1 | [P_테스트입니다.java](src/week7/day1/P_테스트입니다.java)|
+| 58  | week6 | day4 | [P_부녀회장이될테야.java](src/week6/day4/P_부녀회장이될테야.java)|
+| 59  | week6 | day4 | [P_테트로미노_14500.java](src/week6/day4/P_테트로미노_14500.java)|
+| 60  | week7 | day1 | [P_테스트입니다.java](src/week7/day1/P_테스트입니다.java)|
