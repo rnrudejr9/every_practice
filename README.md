@@ -7,10 +7,10 @@
 | 3 | week3 | 1 | 
 | 4 | week4 | 13 | 
 | 5 | week5 | 20 | 
-| 6 | week6 | 16 | 
+| 6 | week6 | 23 | 
 | 7 | week7 | 1 | 
 
-### 총 푼 문제수 = 63 🎉
+### 총 푼 문제수 = 70 🎉
 
 | # | week | day | problem |
 | ------------- | ------------- | ------------- | ------------- |
@@ -76,4 +76,11 @@
 | 60  | week6 | day5 | [P_리모컨_1107.java](src/week6/day5/P_리모컨_1107.java)|
 | 61  | week6 | day5 | [P_단어와문자열.java](src/week6/day5/P_단어와문자열.java)|
 | 62  | week6 | day6 | [P_검증수_2475.java](src/week6/day6/P_검증수_2475.java)|
-| 63  | week7 | day1 | [P_테스트입니다.java](src/week7/day1/P_테스트입니다.java)|
+| 63  | week6 | day7 | [P_별찍기_1.java](src/week6/day7/P_별찍기_1.java)|
+| 64  | week6 | day7 | [P_별찍기_3.java](src/week6/day7/P_별찍기_3.java)|
+| 65  | week6 | day7 | [Main.java](src/week6/day7/Main.java)|
+| 66  | week6 | day7 | [P_별찍기_4.java](src/week6/day7/P_별찍기_4.java)|
+| 67  | week6 | day7 | [P_별찍기_6.java](src/week6/day7/P_별찍기_6.java)|
+| 68  | week6 | day7 | [P_별찍기_12.java](src/week6/day7/P_별찍기_12.java)|
+| 69  | week6 | day7 | [P_별찍기_5.java](src/week6/day7/P_별찍기_5.java)|
+| 70  | week7 | day1 | [P_테스트입니다.java](src/week7/day1/P_테스트입니다.java)|
