@@ -1,5 +1,7 @@
 # EveryDay - Practice
-### push 후 자동으로 README 수정 기능
+### push 후 자동으로 README 수정 기능 
+
+## 참고 : [hello](https://koopi.tistory.com/86)
 | # | week | day |
 |---|---|---| 
 | 1 | week1 | 8 | 
