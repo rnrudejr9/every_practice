@@ -3,7 +3,7 @@ from operator import itemgetter, attrgetter
 
 title_project = "# EveryDay - Practice"
 
-sub_project = "### push 후 자동으로 README 수정 기능 <br> ## 참고 : [개발블로그]()https://koopi.tistory.com/86) \n"
+sub_project = "### push 후 자동으로 README 수정 기능 <br> ## 참고 : [개발블로그](https://koopi.tistory.com/86) \n"
 
 dic = {}
 
