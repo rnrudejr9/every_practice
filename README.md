@@ -1,7 +1,6 @@
 # EveryDay - Practice
-### push 후 자동으로 README 수정 기능 
+### push 후 자동으로 README 수정 기능 <br> ## 참고 : [개발블로그]()https://koopi.tistory.com/86) 
 
-## 참고 : [hello](https://koopi.tistory.com/86)
 | # | week | day |
 |---|---|---| 
 | 1 | week1 | 8 | 
@@ -10,9 +9,9 @@
 | 4 | week4 | 13 | 
 | 5 | week5 | 20 | 
 | 6 | week6 | 23 | 
-| 7 | week7 | 3 | 
+| 7 | week7 | 4 | 
 
-### 총 푼 문제수 = 72 🎉
+### 총 푼 문제수 = 73 🎉
 
 | # | week | day | problem |
 | ------------- | ------------- | ------------- | ------------- |
@@ -88,3 +87,4 @@
 | 70  | week7 | day1 | [P_테스트입니다.java](src/week7/day1/P_테스트입니다.java)|
 | 71  | week7 | day1 | [P_뱀_3190.java](src/week7/day1/P_뱀_3190.java)|
 | 72  | week7 | day2 | [P_종이접기_1802.java](src/week7/day2/P_종이접기_1802.java)|
+| 73  | week7 | day3 | [P_스티커_9465.java](src/week7/day3/P_스티커_9465.java)|
