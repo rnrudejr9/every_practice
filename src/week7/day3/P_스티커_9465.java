@@ -1,5 +1,7 @@
 package week7.day3;
 
+import utils.PrintUtils;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -27,6 +29,7 @@ public class P_스티커_9465 {
                     arr[t][j] = Integer.parseInt(st.nextToken());
                 }
             }
+//            PrintUtils.print2Array(arr);
             for (int t = 0; t < 2; t++) {
                 for (int j = 0; j < n; j++) {
                     perm(i,j,0);
