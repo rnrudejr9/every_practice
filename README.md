@@ -10,9 +10,9 @@
 | 5 | week5 | 20 | 
 | 6 | week6 | 23 | 
 | 7 | week7 | 10 | 
-| 8 | week8 | 1 | 
+| 8 | week8 | 2 | 
 
-### 총 푼 문제수 = 80 🎉
+### 총 푼 문제수 = 81 🎉
 
 | # | week | day | problem |
 | ------------- | ------------- | ------------- | ------------- |
@@ -96,3 +96,4 @@
 | 78  | week7 | day6 | [P_XOR합_13504.java](src/week7/day6/P_XOR합_13504.java)|
 | 79  | week7 | day7 | [P_테스트.java](src/week7/day7/P_테스트.java)|
 | 80  | week8 | day1 | [P_테스트.java](src/week8/day1/P_테스트.java)|
+| 81  | week8 | day2 | [P_테스트.java](src/week8/day2/P_테스트.java)|
