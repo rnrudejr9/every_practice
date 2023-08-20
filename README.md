@@ -8,12 +8,12 @@
 | 3 | week3 | 1 | 
 | 4 | week4 | 13 | 
 | 5 | week5 | 20 | 
-| 6 | week6 | 23 | 
+| 6 | week6 | 25 | 
 | 7 | week7 | 10 | 
 | 8 | week8 | 8 | 
-| 9 | week9 | 5 | 
+| 9 | week9 | 6 | 
 
-### 총 푼 문제수 = 92 🎉
+### 총 푼 문제수 = 95 🎉
 
 | # | week | day | problem |
 | ------------- | ------------- | ------------- | ------------- |
@@ -68,44 +68,47 @@
 | 49  | week6 | day1 | [StringRefTest.java](src/week6/day1/StringRefTest.java)|
 | 50  | week6 | day1 | [MethodOverrodingTest.java](src/week6/day1/MethodOverrodingTest.java)|
 | 51  | week6 | day1 | [SingleTonPatternTest.java](src/week6/day1/SingleTonPatternTest.java)|
-| 52  | week6 | day1 | [InstanceOfTest.java](src/week6/day1/InstanceOfTest.java)|
-| 53  | week6 | day1 | [InterfaceTest.java](src/week6/day1/InterfaceTest.java)|
-| 54  | week6 | day1 | [P_경로찾기_11403.java](src/week6/day1/P_경로찾기_11403.java)|
-| 55  | week6 | day1 | [ClassAbstractTest.java](src/week6/day1/ClassAbstractTest.java)|
-| 56  | week6 | day2 | [P_1676_팩토리얼0의개수.java](src/week6/day2/P_1676_팩토리얼0의개수.java)|
-| 57  | week6 | day3 | [P_내일테스트.java](src/week6/day3/P_내일테스트.java)|
-| 58  | week6 | day4 | [P_테트로미노_14500.java](src/week6/day4/P_테트로미노_14500.java)|
-| 59  | week6 | day4 | [P_부녀회장이될테야.java](src/week6/day4/P_부녀회장이될테야.java)|
-| 60  | week6 | day5 | [P_단어와문자열.java](src/week6/day5/P_단어와문자열.java)|
-| 61  | week6 | day5 | [P_리모컨_1107.java](src/week6/day5/P_리모컨_1107.java)|
-| 62  | week6 | day6 | [P_검증수_2475.java](src/week6/day6/P_검증수_2475.java)|
-| 63  | week6 | day7 | [P_별찍기_6.java](src/week6/day7/P_별찍기_6.java)|
-| 64  | week6 | day7 | [P_별찍기_12.java](src/week6/day7/P_별찍기_12.java)|
-| 65  | week6 | day7 | [Main.java](src/week6/day7/Main.java)|
-| 66  | week6 | day7 | [P_별찍기_1.java](src/week6/day7/P_별찍기_1.java)|
-| 67  | week6 | day7 | [P_별찍기_4.java](src/week6/day7/P_별찍기_4.java)|
-| 68  | week6 | day7 | [P_별찍기_5.java](src/week6/day7/P_별찍기_5.java)|
-| 69  | week6 | day7 | [P_별찍기_3.java](src/week6/day7/P_별찍기_3.java)|
-| 70  | week7 | day1 | [P_뱀_3190.java](src/week7/day1/P_뱀_3190.java)|
-| 71  | week7 | day1 | [P_테스트입니다.java](src/week7/day1/P_테스트입니다.java)|
-| 72  | week7 | day2 | [P_종이접기_1802.java](src/week7/day2/P_종이접기_1802.java)|
-| 73  | week7 | day3 | [P_스티커_9465.java](src/week7/day3/P_스티커_9465.java)|
-| 74  | week7 | day4 | [P_DNA비밀번호_12891.java](src/week7/day4/P_DNA비밀번호_12891.java)|
-| 75  | week7 | day4 | [P_도영이가만든맛있는음식_2961.java](src/week7/day4/P_도영이가만든맛있는음식_2961.java)|
-| 76  | week7 | day5 | [P_신기한소수.java](src/week7/day5/P_신기한소수.java)|
-| 77  | week7 | day6 | [P_덱_10866.java](src/week7/day6/P_덱_10866.java)|
-| 78  | week7 | day6 | [P_XOR합_13504.java](src/week7/day6/P_XOR합_13504.java)|
-| 79  | week7 | day7 | [P_테스트.java](src/week7/day7/P_테스트.java)|
-| 80  | week8 | day1 | [P_테스트.java](src/week8/day1/P_테스트.java)|
-| 81  | week8 | day2 | [P_테스트.java](src/week8/day2/P_테스트.java)|
-| 82  | week8 | day3 | [P_XOR.java](src/week8/day3/P_XOR.java)|
-| 83  | week8 | day4 | [P_n과m_12_15666.java](src/week8/day4/P_n과m_12_15666.java)|
-| 84  | week8 | day6 | [P_고양이.java](src/week8/day6/P_고양이.java)|
-| 85  | week8 | day7 | [P_ab4.java](src/week8/day7/P_ab4.java)|
-| 86  | week8 | day7 | [P_부분증가하는수열.java](src/week8/day7/P_부분증가하는수열.java)|
-| 87  | week8 | day7 | [P_사분면_1891.java](src/week8/day7/P_사분면_1891.java)|
-| 88  | week9 | day2 | [P_Z.java](src/week9/day2/P_Z.java)|
-| 89  | week9 | day3 | [P_사분면_1891.java](src/week9/day3/P_사분면_1891.java)|
-| 90  | week9 | day5 | [백준_벽부수고이동하기2_14442.java](src/week9/day5/백준_벽부수고이동하기2_14442.java)|
-| 91  | week9 | day5 | [백준_1로만들기_1463.java](src/week9/day5/백준_1로만들기_1463.java)|
-| 92  | week9 | day5 | [백준_탈출_3055.java](src/week9/day5/백준_탈출_3055.java)|
+| 52  | week6 | day1 | [P_구간합구하기5_11660.java](src/week6/day1/P_구간합구하기5_11660.java)|
+| 53  | week6 | day1 | [InstanceOfTest.java](src/week6/day1/InstanceOfTest.java)|
+| 54  | week6 | day1 | [InterfaceTest.java](src/week6/day1/InterfaceTest.java)|
+| 55  | week6 | day1 | [P_경로찾기_11403.java](src/week6/day1/P_경로찾기_11403.java)|
+| 56  | week6 | day1 | [ClassAbstractTest.java](src/week6/day1/ClassAbstractTest.java)|
+| 57  | week6 | day2 | [P_1676_팩토리얼0의개수.java](src/week6/day2/P_1676_팩토리얼0의개수.java)|
+| 58  | week6 | day3 | [P_내일테스트.java](src/week6/day3/P_내일테스트.java)|
+| 59  | week6 | day4 | [P_테트로미노_14500.java](src/week6/day4/P_테트로미노_14500.java)|
+| 60  | week6 | day4 | [P_부녀회장이될테야.java](src/week6/day4/P_부녀회장이될테야.java)|
+| 61  | week6 | day5 | [P_단어와문자열.java](src/week6/day5/P_단어와문자열.java)|
+| 62  | week6 | day5 | [P_리모컨_1107.java](src/week6/day5/P_리모컨_1107.java)|
+| 63  | week6 | day6 | [P_검증수_2475.java](src/week6/day6/P_검증수_2475.java)|
+| 64  | week6 | day7 | [P_별찍기_6.java](src/week6/day7/P_별찍기_6.java)|
+| 65  | week6 | day7 | [P_별찍기_2.java](src/week6/day7/P_별찍기_2.java)|
+| 66  | week6 | day7 | [P_별찍기_12.java](src/week6/day7/P_별찍기_12.java)|
+| 67  | week6 | day7 | [Main.java](src/week6/day7/Main.java)|
+| 68  | week6 | day7 | [P_별찍기_1.java](src/week6/day7/P_별찍기_1.java)|
+| 69  | week6 | day7 | [P_별찍기_4.java](src/week6/day7/P_별찍기_4.java)|
+| 70  | week6 | day7 | [P_별찍기_5.java](src/week6/day7/P_별찍기_5.java)|
+| 71  | week6 | day7 | [P_별찍기_3.java](src/week6/day7/P_별찍기_3.java)|
+| 72  | week7 | day1 | [P_뱀_3190.java](src/week7/day1/P_뱀_3190.java)|
+| 73  | week7 | day1 | [P_테스트입니다.java](src/week7/day1/P_테스트입니다.java)|
+| 74  | week7 | day2 | [P_종이접기_1802.java](src/week7/day2/P_종이접기_1802.java)|
+| 75  | week7 | day3 | [P_스티커_9465.java](src/week7/day3/P_스티커_9465.java)|
+| 76  | week7 | day4 | [P_DNA비밀번호_12891.java](src/week7/day4/P_DNA비밀번호_12891.java)|
+| 77  | week7 | day4 | [P_도영이가만든맛있는음식_2961.java](src/week7/day4/P_도영이가만든맛있는음식_2961.java)|
+| 78  | week7 | day5 | [P_신기한소수.java](src/week7/day5/P_신기한소수.java)|
+| 79  | week7 | day6 | [P_덱_10866.java](src/week7/day6/P_덱_10866.java)|
+| 80  | week7 | day6 | [P_XOR합_13504.java](src/week7/day6/P_XOR합_13504.java)|
+| 81  | week7 | day7 | [P_테스트.java](src/week7/day7/P_테스트.java)|
+| 82  | week8 | day1 | [P_테스트.java](src/week8/day1/P_테스트.java)|
+| 83  | week8 | day2 | [P_테스트.java](src/week8/day2/P_테스트.java)|
+| 84  | week8 | day3 | [P_XOR.java](src/week8/day3/P_XOR.java)|
+| 85  | week8 | day4 | [P_n과m_12_15666.java](src/week8/day4/P_n과m_12_15666.java)|
+| 86  | week8 | day6 | [P_고양이.java](src/week8/day6/P_고양이.java)|
+| 87  | week8 | day7 | [P_ab4.java](src/week8/day7/P_ab4.java)|
+| 88  | week8 | day7 | [P_부분증가하는수열.java](src/week8/day7/P_부분증가하는수열.java)|
+| 89  | week8 | day7 | [P_사분면_1891.java](src/week8/day7/P_사분면_1891.java)|
+| 90  | week9 | day2 | [P_Z.java](src/week9/day2/P_Z.java)|
+| 91  | week9 | day3 | [P_사분면_1891.java](src/week9/day3/P_사분면_1891.java)|
+| 92  | week9 | day5 | [백준_벽부수고이동하기2_14442.java](src/week9/day5/백준_벽부수고이동하기2_14442.java)|
+| 93  | week9 | day5 | [백준_1로만들기_1463.java](src/week9/day5/백준_1로만들기_1463.java)|
+| 94  | week9 | day5 | [백준_탈출_3055.java](src/week9/day5/백준_탈출_3055.java)|
+| 95  | week9 | day6 | [P_테스트.java](src/week9/day6/P_테스트.java)|
