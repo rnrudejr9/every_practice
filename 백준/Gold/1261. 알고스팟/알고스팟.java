@@ -8,7 +8,7 @@ import java.util.StringTokenizer;
 
 /**
  * 참고
- * 메모리초과
+ * 메모리초과 -> 방문처리 잘못했었음
  * 
  * @author SSAFY
  *
