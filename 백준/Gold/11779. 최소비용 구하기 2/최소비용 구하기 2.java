@@ -3,7 +3,9 @@ import java.io.*;
 
 /**
  * 어떻게하면 방문기록들을 남길까?
+ * stack 활용해서 남김
  * 
+ * INF 에서 /1000 연산 넣어서 계속해서 틀림
  * @author SSAFY
  *
  */
